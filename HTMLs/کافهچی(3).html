@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>کافه‌چی</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--c1:#5E0006;--c2:#9B0F06;--c3:#D53E0F;--c4:#EED9B9;--bg:#EED9B9;--card:#f8ecd6;--tx:#3a0a05;--mu:#7a4a3a;--ln:#c9a97d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a0305;--card:#3d0709;--tx:#f3e2c3;--mu:#d2b08a;--ln:#7a2a1c}}
+:root[data-theme="dark"]{--bg:#2a0305;--card:#3d0709;--tx:#f3e2c3;--mu:#d2b08a;--ln:#7a2a1c}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font-family:Vazirmatn,Tahoma,sans-serif;background:var(--bg);color:var(--tx);background-image:repeating-linear-gradient(45deg,transparent 0 18px,rgba(155,15,6,.05) 18px 19px),repeating-linear-gradient(-45deg,transparent 0 18px,rgba(155,15,6,.05) 18px 19px);line-height:1.8}
+header{background:var(--c1);color:#EED9B9;border-bottom:4px double var(--c3);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--c1);z-index:10}
+.nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:8px 16px;max-width:1000px;margin:auto}
+.logo{font-weight:800;font-size:1.5rem;margin-inline-end:auto;cursor:pointer}
+.nav a{color:#EED9B9;padding:2px 10px;border-radius:6px;cursor:pointer;font-size:.95rem}.nav a:hover{background:var(--c2)}
+main{max-width:1000px;margin:auto;padding:20px 16px 60px}
+h1,h2,h3{color:var(--c2);margin:.4em 0}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h1,:root:not([data-theme="light"]) h2,:root:not([data-theme="light"]) h3{color:#f0a070}}
+.hero{text-align:center;padding:40px 16px;border:2px solid var(--c2);border-radius:14px;background:linear-gradient(var(--card),var(--card));outline:2px solid var(--ln);outline-offset:-10px}
+.hero h1{font-size:2.6rem;margin:0}
+.btn{background:var(--c2);color:#fff;border:0;padding:9px 20px;border-radius:8px;font:inherit;cursor:pointer;margin:4px}.btn:hover{background:var(--c3)}
+.btn.alt{background:transparent;color:var(--c2);border:2px solid var(--c2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:14px;border-top:4px solid var(--c3)}
+.pick{cursor:pointer;text-align:center;font-weight:600}.pick:hover{background:var(--c4);color:#3a0a05}
+input,select,textarea{font:inherit;padding:8px;border:1px solid var(--ln);border-radius:8px;width:100%;margin:4px 0;background:#fff8ea;color:#3a0a05}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 0;border-bottom:1px dashed var(--ln)}
+.mu{color:var(--mu);font-size:.9rem}.star{color:var(--c3)}
+.gal{display:flex;gap:8px;margin:8px 0}.gal div{flex:1;height:70px;border-radius:8px;display:grid;place-items:center;font-size:1.8rem;background:var(--c2);color:#EED9B9}
+.gal div:nth-child(2){background:var(--c3)}.gal div:nth-child(3){background:var(--c1)}
+table{width:100%;border-collapse:collapse}td,th{border:1px solid var(--ln);padding:6px;text-align:center}th{background:var(--c2);color:#fff}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.steps{color:var(--mu);margin-bottom:10px}
+.ok{background:#2d6a3f;color:#fff;padding:8px 12px;border-radius:8px}
+footer{text-align:center;padding:20px;color:var(--mu);border-top:4px double var(--ln)}
+:root,:root:not([data-theme="light"]),:root[data-theme="dark"]{--bg:#fff;--card:#fff;--tx:#3a0a05;--mu:#7a4a3a;--ln:#EED9B9;color-scheme:light}
+:root:not([data-theme="light"]) h1,:root:not([data-theme="light"]) h2,:root:not([data-theme="light"]) h3{color:var(--c2)}
+body{background:#fff;background-image:none}
+header{border-bottom:0}
+header::after{content:"";display:block;height:10px;background:repeating-linear-gradient(90deg,#D53E0F 0 14px,#EED9B9 14px 18px,#9B0F06 18px 32px,#EED9B9 32px 36px)}
+.logo{font-family:'Aref Ruqaa',Vazirmatn,serif;font-size:2rem;color:#EED9B9}
+h1,h2,h3{font-family:'Aref Ruqaa',Vazirmatn,serif}
+main h2{font-size:1.9rem;display:inline-block;border-bottom:3px double var(--c3);padding-bottom:0;margin:.7em 0 .5em}
+h3{font-size:1.25rem}
+.hero{max-width:520px;margin:10px auto 30px;padding:56px 32px 40px;border:0;outline:0;border-radius:999px 999px 18px 18px;background:linear-gradient(var(--c1),var(--c2));color:var(--c4);box-shadow:inset 0 0 0 9px var(--c1),inset 0 0 0 12px var(--c4)}
+.hero h1{font-family:'Aref Ruqaa',Vazirmatn,serif;font-size:4rem;color:var(--c4);line-height:1.2}
+:root:not([data-theme="light"]) .hero h1{color:var(--c4)}
+.samovar{font-size:2.8rem;line-height:1}
+.hero .mu{color:var(--c4);opacity:.85}
+.hero .btn{background:var(--c4);color:var(--c1);font-weight:600}.hero .btn:hover{background:#fff}
+.hero .btn.alt{background:transparent;color:var(--c4);border:2px solid var(--c4)}
+.btn{border-radius:4px 14px 4px 14px;background:var(--c2)}
+.btn.alt{background:transparent;color:var(--c2);border:2px solid var(--c2)}
+.card{background:#fff;border:2px solid var(--c4);border-top:5px solid var(--c3);border-radius:2px 22px 2px 22px}
+.pick:hover{background:var(--c4)}
+.steps{display:inline-block;border-inline-start:4px solid var(--c3);padding:0 10px;background:var(--c4);color:var(--c1);border-radius:2px}
+input,select,textarea{background:#fff;border:2px solid var(--c4);color:var(--tx)}
+input:focus,select:focus,textarea:focus{border-color:var(--c3);outline:0}
+:focus-visible{outline:3px solid var(--c3);outline-offset:2px}
+th{background:var(--c1)}td,th{border-color:var(--c4)}
+footer{background:var(--c1);color:var(--c4);border:0;margin-top:20px}
+.row{border-bottom:1px solid var(--c4)}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:6px 0 24px}
+.cat{height:140px;border:0;cursor:pointer;color:#EED9B9;font:inherit;display:grid;place-items:center;align-content:center;gap:4px;border-radius:2px 22px 2px 22px;background:var(--img,var(--bg1));background-size:cover;background-position:center}
+.cat b{font-size:2.8rem;line-height:1;font-weight:400}.cat span{font-family:'Aref Ruqaa',Vazirmatn,serif;font-size:1.5rem;background:rgba(94,0,6,.6);padding:0 14px;border-radius:999px}
+.cat:hover{filter:brightness(1.12)}
+.cartbtn{position:relative;font-size:1.3rem;padding:2px 10px}
+.cartbtn b{position:absolute;top:-4px;right:-4px;background:var(--c3);color:#fff;font-size:.7rem;border-radius:999px;min-width:18px;height:18px;line-height:18px;text-align:center}
+.adm{font-weight:800;color:var(--c1);background:var(--c4);display:inline-block;padding:2px 14px;border-radius:2px 14px 2px 14px;margin:0 0 8px}
+.tag{font-size:.9rem;color:#2d6a3f}.tag.off{color:var(--c3)}
+:root[data-t="modern"]{--ln:#f1e6d2}
+:root[data-t="modern"] body::before{background:#fff}
+:root[data-t="modern"] header{background:#fff;color:var(--c1)}
+:root[data-t="modern"] header::after{height:4px;background:linear-gradient(90deg,var(--c1),var(--c3),var(--c4))}
+:root[data-t="modern"] .logo{font-family:Vazirmatn,sans-serif;font-weight:800;font-size:1.5rem;color:var(--c1)}
+:root[data-t="modern"] .nav a{color:var(--c1);border-radius:999px}
+:root[data-t="modern"] .nav a:hover{background:var(--c4)}
+:root[data-t="modern"]:not([data-theme="light"]) h1,:root[data-t="modern"]:not([data-theme="light"]) h2,:root[data-t="modern"]:not([data-theme="light"]) h3{font-family:Vazirmatn,sans-serif;font-weight:800;color:var(--c1)}
+:root[data-t="modern"] main h2{border:0;display:block;position:relative;padding-inline-start:14px;font-size:1.6rem}
+:root[data-t="modern"] main h2::before{content:"";position:absolute;inset-inline-start:0;top:.3em;bottom:.3em;width:5px;border-radius:3px;background:var(--c3)}
+:root[data-t="modern"] .hero{max-width:none;margin:10px 0 30px;padding:44px 24px;border-radius:28px;box-shadow:none;color:var(--c1);background:radial-gradient(circle at 100% 0,rgba(213,62,15,.2) 0 90px,transparent 91px),radial-gradient(circle at 0 100%,rgba(94,0,6,.14) 0 130px,transparent 131px),var(--c4)}
+:root[data-t="modern"]:not([data-theme="light"]) .hero h1{font-family:Vazirmatn,sans-serif;font-weight:800;font-size:3.2rem;color:var(--c1)}
+:root[data-t="modern"] .hero .mu{color:var(--tx);opacity:1}
+:root[data-t="modern"] .hero .btn{background:var(--c2);color:#fff}
+:root[data-t="modern"] .hero .btn.alt{background:transparent;color:var(--c2);border-color:var(--c2)}
+:root[data-t="modern"] .samovar{display:inline-grid;place-items:center;width:84px;height:100px;border-radius:999px 999px 10px 10px;background:var(--c1);margin-bottom:8px;font-size:2.4rem}
+:root[data-t="modern"] .btn{border-radius:999px}
+:root[data-t="modern"] .card{border:1px solid var(--c4);border-bottom:3px solid var(--c3);border-radius:18px;box-shadow:0 4px 14px rgba(94,0,6,.07)}
+:root[data-t="modern"] .cat{border-radius:80px 80px 16px 16px;height:160px}
+:root[data-t="modern"] .gal div{border-radius:40px 40px 8px 8px}
+:root[data-t="modern"] .steps{background:transparent;border:1px solid var(--c3);border-radius:999px;color:var(--c2);padding:0 14px}
+:root[data-t="modern"] input,:root[data-t="modern"] select,:root[data-t="modern"] textarea{border:1px solid var(--c4);border-radius:12px}
+:root[data-t="modern"] th{background:var(--c2)}
+:root[data-t="modern"] .adm{border-radius:999px}
+:root[data-t="modern"] footer{background:#fff;color:var(--mu);border-top:1px solid var(--c4)}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.8)}70%{transform:scale(1.04)}to{opacity:1;transform:none}}
+@keyframes drop{from{opacity:0;transform:translateY(-40px)}60%{opacity:1;transform:translateY(8px)}to{transform:none}}
+@keyframes slideIn{from{opacity:0;transform:translateX(-32px)}to{opacity:1;transform:none}}
+@keyframes flip{from{opacity:0;transform:perspective(600px) rotateX(-55deg)}to{opacity:1;transform:none}}
+@keyframes fill{from{transform:scaleX(0)}to{transform:none}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:none}}
+@keyframes steam{0%{opacity:0;transform:translateY(0) scale(.5)}30%{opacity:.75}100%{opacity:0;transform:translateY(-44px) scale(1.5)}}
+@keyframes bump{40%{transform:scale(1.7)}}
+@keyframes blink{50%{opacity:.45}}
+@keyframes wob{25%{transform:rotate(-4deg)}75%{transform:rotate(4deg)}}
+:is(.grid,.cats,.card,tbody)>:nth-child(2){--d:70ms}:is(.grid,.cats,.card,tbody)>:nth-child(3){--d:140ms}:is(.grid,.cats,.card,tbody)>:nth-child(4){--d:210ms}:is(.grid,.cats,.card,tbody)>:nth-child(5){--d:280ms}:is(.grid,.cats,.card,tbody)>:nth-child(6){--d:350ms}:is(.grid,.cats,.card,tbody)>:nth-child(n+7){--d:420ms}
+header{animation:drop .7s both}footer{animation:rise 1s .5s both}
+.logo:hover{animation:wob .6s}
+.btn{transition:transform .15s,background .2s}.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.94)}
+.pick{transition:transform .2s}.pick:hover{transform:translateY(-4px) rotate(-1deg)}
+.gal div{transition:transform .3s}.gal div:hover{transform:translateY(-4px) rotate(-3deg)}
+.cat{transition:transform .25s,filter .25s}.cat:hover{transform:translateY(-5px)}
+.samovar{position:relative}.samovar::before,.samovar::after{content:"";position:absolute;top:2px;width:14px;height:14px;border-radius:50%;background:rgba(238,217,185,.85);filter:blur(5px);animation:steam 2.8s infinite ease-out}
+.samovar::before{left:36%}.samovar::after{left:56%;animation-delay:1.3s}
+.cartbtn b.bump{animation:bump .45s}
+.tag{animation:blink 2.4s infinite}
+#app.enter .grid>*{animation:rise .55s both;animation-delay:var(--d,0ms)}
+#app.enter .steps{animation:slideIn .5s both}
+#app.enter .adm{animation:pop .5s both}
+#app.enter[data-v="home"] .hero{animation:rise .9s both}
+#app.enter[data-v="home"] .cats>*{animation:pop .5s both;animation-delay:calc(.3s + var(--d,0ms))}
+#app.enter[data-v="home"] .grid>*{animation-delay:calc(.6s + var(--d,0ms))}
+#app.enter[data-v="login"] .card{animation:drop .7s both}
+#app.enter[data-v="areas"] .grid>*{animation-name:pop}
+#app.enter[data-v="cafes"] .grid>*{animation-name:slideIn}
+#app.enter[data-v="blog"] .grid>*{animation-name:flip;transform-origin:top}
+#app.enter[data-v="cafe"] .card>.row{animation:slideIn .45s both;animation-delay:var(--d,0ms)}
+#app.enter[data-v="done"] .ok{animation:pop .6s both}
+#app.enter[data-v="club"] .card div div{animation:fill 1.2s .2s both;transform-origin:right}
+#app.enter[data-v="compare"] tbody>*{animation:rise .5s both;animation-delay:var(--d,0ms)}
+#app.enter:is([data-v="contact"],[data-v="cart"],[data-v="admin"]) .card{animation:rise .5s both}
+#app.enter[data-v="admin"] svg rect{animation:grow .8s .2s both;transform-box:fill-box;transform-origin:bottom}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+@keyframes sheen{to{background-position:-250% 0}}
+@keyframes mq{to{transform:translateX(50%)}}
+@keyframes rip{to{transform:scale(1);opacity:0}}
+@keyframes toast{0%{opacity:0;transform:translateY(30px)}12%,85%{opacity:1;transform:none}100%{opacity:0;transform:translateY(10px)}}
+@keyframes drift{to{transform:translate(40px,-30px) scale(1.12)}}
+@keyframes splash{0%,75%{opacity:1}100%{opacity:0;visibility:hidden}}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@keyframes vtout{to{opacity:0}}@keyframes vtin{from{opacity:0;transform:translateY(14px)}}
+header{view-transition-name:hdr}
+::view-transition-old(root){animation:.18s ease both vtout}::view-transition-new(root){animation:.4s cubic-bezier(.2,.8,.2,1) both vtin}
+#splash{position:fixed;inset:0;z-index:100;background:var(--c1);display:grid;place-items:center;color:var(--c4);pointer-events:none;animation:splash 1.7s forwards}
+#splash .sp{text-align:center;font-size:3.4rem;font-family:'Aref Ruqaa',Vazirmatn,serif;animation:rise .8s both}#splash span{display:block;font-size:3rem;animation:bob 1.2s infinite}
+#prog{position:fixed;top:0;left:0;right:0;height:3px;background:var(--c3);transform-origin:right;transform:scaleX(var(--sp,0));z-index:30}
+header{transition:background .3s,box-shadow .3s}header.sc{background:rgba(94,0,6,.86);backdrop-filter:blur(10px);box-shadow:0 6px 20px rgba(94,0,6,.25)}
+:root[data-t="modern"] header.sc{background:rgba(255,255,255,.85)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 12% 18%,rgba(213,62,15,.08) 0 170px,transparent 171px),radial-gradient(circle at 88% 78%,rgba(94,0,6,.07) 0 210px,transparent 211px);animation:drift 16s ease-in-out infinite alternate}
+.nav a{position:relative}.nav a::after{content:"";position:absolute;inset-inline:10px;bottom:0;height:2px;background:var(--c3);transform:scaleX(0);transition:transform .25s}.nav a:hover::after{transform:scaleX(1)}.cartbtn::after{display:none}
+.hero,.card,.cat,.pick,.btn{position:relative;overflow:hidden}
+.card::after,.cat::after,.pick::after,.hero::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(200px circle at var(--px,50%) var(--py,50%),rgba(213,62,15,.16),transparent 70%)}
+.card:hover::after,.cat:hover::after,.pick:hover::after{opacity:1}
+.cat::after{background:radial-gradient(170px circle at var(--px,50%) var(--py,50%),rgba(255,255,255,.3),transparent 70%)}
+.hero::before{opacity:1;background:radial-gradient(340px circle at var(--px,50%) var(--py,25%),rgba(255,255,255,.22),transparent 70%)}
+.samovar{translate:calc(var(--mx,0)*16px) calc(var(--my,0)*10px);transition:translate .2s}
+.hero h1{background:linear-gradient(100deg,var(--c4) 35%,#fff 50%,var(--c4) 65%) 0 0/250% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:sheen 5s linear infinite}
+:root[data-t="modern"] .hero h1{background-image:linear-gradient(100deg,var(--c1) 35%,var(--c3) 50%,var(--c1) 65%)}
+.rip{position:absolute;border-radius:50%;background:rgba(255,255,255,.4);transform:scale(0);animation:rip .6s ease-out forwards;pointer-events:none}.btn.alt .rip{background:rgba(155,15,6,.25)}
+.mq{overflow:hidden;white-space:nowrap;background:var(--c1);color:var(--c4);padding:6px 0;margin:6px 0 4px;border-radius:999px}.mq div{display:inline-block;animation:mq 26s linear infinite}
+.toast{position:fixed;inset-inline:0;bottom:calc(24px + env(safe-area-inset-bottom,0px));margin:auto;width:max-content;max-width:90%;background:var(--c1);color:var(--c4);padding:10px 22px;border-radius:999px;z-index:80;animation:toast 2.8s both}
+svg rect{transition:fill .2s}svg rect:hover{fill:#9B0F06}
+@media (prefers-reduced-motion:reduce){#splash,#prog,body::after,.mq{display:none}}
+</style>
+</head>
+<body>
+<header><div class="nav" id="nav"></div></header>
+<div id="splash"><div class="sp"><span>☕</span>کافه‌چی</div></div>
+<main id="app"></main>
+<footer>کافه‌چی · مشهد · تلفن: ـــــ · نشانی: ـــــ · اینستاگرام: ـــــ</footer>
+<script>
+const $=s=>document.querySelector(s);
+const fa=n=>Number(n).toLocaleString("fa-IR");
+const AREAS=["وکیل‌آباد","احمدآباد","سجاد","هاشمیه","ملک‌آباد","امامت"];
+const CAFES=[
+{id:1,n:"چای‌خانه سنتی سرای قدیم",a:"وکیل‌آباد",r:4.6,p:2,g:["🍵","🪔","🏺"],m:[["چای ذغالی",40],["قهوه ترک",60],["دمنوش بهارنارنج",55],["نان و پنیر و سبزی",70]]},
+{id:2,n:"کافه سماور",a:"وکیل‌آباد",r:4.3,p:1,g:["☕","🫖","🍰"],m:[["لاته",75],["چای سماوری",35],["کیک شکلاتی",80],["قلیان‌نبات",45]]},
+{id:3,n:"قهوه‌خانه شاه‌عباسی",a:"احمدآباد",r:4.8,p:3,g:["🏺","🍵","🕌"],m:[["دیزی",150],["چای شاه‌عباسی",50],["شیرینی سنتی",65],["اسپرسو",55]]},
+{id:4,n:"کافه باغ‌نو",a:"سجاد",r:4.1,p:2,g:["🌿","☕","🥐"],m:[["کاپوچینو",80],["کروسان",60],["آیس‌کافی",85],["چای ماسالا",65]]},
+{id:5,n:"چایخانه حافظ",a:"احمدآباد",r:4.5,p:1,g:["📜","🍵","🌹"],m:[["چای گل‌گاوزبان",45],["حلوا",40],["قهوه فرانسه",60],["کیک یزدی",50]]},
+{id:6,n:"کافه گلشن",a:"هاشمیه",r:4.2,p:2,g:["🌸","☕","🧁"],m:[["موکا",90],["چای لیمو",40],["چیزکیک",95],["شیر کاکائو",50]]}];
+const BLOG=[["چای ذغالی چگونه دم می‌شود؟","رمز یک چای خوب، آتش ملایم ذغال و صبر است. چای را روی سماور بگذارید تا عطرش کم‌کم بنشیند."],["تاریخچه قهوه‌خانه‌ها در ایران","قهوه‌خانه‌ها قرن‌ها جای گفت‌وگو، نقالی و شاهنامه‌خوانی بوده‌اند."],["بهترین زمان نوشیدن دمنوش","دمنوش‌های گیاهی بعد از شام آرامش‌بخش‌اند."]];
+let S={v:"home",u:null,area:null,cafe:null,cart:{},mode:"in",pts:0,orders:[],rate:{},cmp:[],prods:{},staff:[["علی رضایی","صندوق‌دار",9000],["مریم احمدی","باریستا",11000]],sms:[],stock:{},att:{},hrs:{o:"08:00",c:"23:00",open:true},tab:"prod",tmpOrder:null};
+try{const x=localStorage.getItem("cafechi");if(x)S={...S,...JSON.parse(x),v:"home",cart:{},tmpOrder:null}}catch(e){}
+function save(){try{localStorage.setItem("cafechi",JSON.stringify({u:S.u,pts:S.pts,orders:S.orders,rate:S.rate,prods:S.prods,staff:S.staff,sms:S.sms,stock:S.stock,att:S.att,hrs:S.hrs}))}catch(e){}}
+function go(v){const f=()=>{S.v=v;draw();scrollTo(0,0)};document.startViewTransition&&!matchMedia("(prefers-reduced-motion:reduce)").matches?document.startViewTransition(f):f()}
+function nav(){const l=[["home","معرفی"],["areas","کافه‌ها"],["club","باشگاه"],["blog","وبلاگ"],["contact","تماس"]];
+ $("#nav").innerHTML=`<span class="logo" onclick="go('home')">☕ کافه‌چی</span>`+l.map(x=>`<a onclick="go('${x[0]}')">${x[1]}</a>`).join("")+(S.u?(S.u.role=="admin"?`<a onclick="go('admin')">پنل مدیریت</a>`:"")+`<a onclick="S.u=null;save();go('home')">خروج</a>`:`<a onclick="go('login')">ورود</a>`)+`<a onclick="thm()" title="تغییر ظاهر">🎨 ${T=="modern"?"ظاهر سنتی":"ظاهر مدرن‌سنتی"}</a>`+`<a class="cartbtn" onclick="go('cart')" aria-label="سبد خرید">🛒${cn()?`<b>${fa(cn())}</b>`:""}</a>`}
+function avg(c){const r=S.rate[c.id]||[];if(!r.length)return c.r;return ((c.r*5+r.reduce((a,b)=>a+(b[0]+b[1])/2,0))/(5+r.length)).toFixed(1)}
+function stars(n){return `<span class="star">${"★".repeat(Math.round(n))}${"☆".repeat(5-Math.round(n))}</span> ${n}`}
+function price(c){return "تومان".length&&"$".repeat(c.p).replace(/\$/g,"◈")}
+const V={
+home:()=>`<div class="hero"><div class="samovar">🫖</div><h1>کافه‌چی</h1><p>چای‌خانه‌ای در جیب شما؛ کافه‌های مشهد، یک‌جا.</p><p class="mu">محله‌تان را انتخاب کنید، از میان کافه‌های نزدیک یکی را برگزینید، سفارش دهید و با هر سفارش امتیاز بگیرید.</p><button class="btn" onclick="S.u?go('areas'):go('login')">شروع سفارش</button><button class="btn alt" onclick="go('areas')">دیدن کافه‌ها</button></div>
+<div class="mq"><div>${"🍵 چای ذغالی ✦ ☕ قهوه ترک ✦ 🍰 شیرینی سنتی ✦ 🫖 دمنوش بهارنارنج ✦ ".repeat(6)}</div></div><h2>امروز چه می‌خواهید؟</h2><div class="cats">${CATS.map(c=>`<button class="cat" style="--bg1:${c[4]}" onclick="S.cat='${c[0]}';go('areas')"><b>${c[2]}</b><span>${c[1]}</span></button>`).join("")}</div><h2>درباره کافه‌چی</h2><div class="grid"><div class="card"><h3>🍵 حال‌وهوای قدیم</h3>کافه‌چی کافه‌ها و چای‌خانه‌های محله‌های مشهد را کنار هم آورده تا انتخاب و سفارش ساده شود.</div><div class="card"><h3>🛵 حضوری یا پیک</h3>خودتان بیایید یا سفارش را به در خانه بفرستیم.</div><div class="card"><h3>🎁 باشگاه مشتریان</h3>با هر سفارش یک امتیاز؛ با ۵ امتیاز نوشیدنی هدیه بگیرید.</div><div class="card"><h3>⭐ رده‌بندی منصفانه</h3>کیفیت و قیمت هر کافه را شما امتیاز می‌دهید.</div></div>`,
+login:()=>`<div class="card" style="max-width:400px;margin:auto"><h2>ورود</h2><p class="mu">شماره موبایل خود را وارد کنید. (نمایشی: کد تأیید ۱۲۳۴. شماره مدیر: ۰۹۱۲۰۰۰۰۰۰۰)</p><input id="ph" placeholder="09123456789" inputmode="numeric" maxlength="11"><div id="cw" style="display:none"><input id="cd" placeholder="کد تأیید" inputmode="numeric"></div><div id="er" class="mu"></div><button class="btn" id="lb" onclick="login()">دریافت کد</button></div>`,
+areas:()=>`<div class="steps">مرحله ۱ از ۴ · محله</div><h2>بیشتر کجا هستید؟</h2><div class="grid">${AREAS.map(a=>`<div class="card pick" onclick="S.area='${a}';go('cafes')">📍 ${a}<div class="mu">${CAFES.filter(c=>c.a==a).length} کافه</div></div>`).join("")}</div>`,
+cafes:()=>{const l=CAFES.filter(c=>c.a==S.area).sort((a,b)=>avg(b)-avg(a));return `<div class="steps">مرحله ۲ از ۴ · کافه‌های ${S.area}</div><h2>کافه‌های ${S.area}</h2>${l.length?`<div class="grid">${l.map(c=>`<div class="card"><h3>${c.n}</h3><div class="gal">${c.g.map(x=>`<div>${x}</div>`).join("")}</div>${stars(avg(c))}<div class="mu">سطح قیمت: ${price(c)}</div>${tag(c)}<label class="mu"><input type="checkbox" style="width:auto" ${S.cmp.includes(c.id)?"checked":""} onchange="cmp(${c.id})"> مقایسه</label><br><button class="btn" onclick="S.cafe=${c.id};S.cart={};go('cafe')">انتخاب</button></div>`).join("")}</div>`:"<p>هنوز کافه‌ای ثبت نشده.</p>"}<button class="btn alt" onclick="go('areas')">تغییر محله</button><button class="btn alt" onclick="go('compare')">مقایسه (${S.cmp.length})</button>`},
+cafe:()=>{const c=CAFES.find(x=>x.id==S.cafe),t=total(c);return `<div class="steps">مرحله ۳ از ۴ · سفارش</div><h2>${c.n}</h2>${tag(c)}<div class="gal">${c.g.map(x=>`<div>${x}</div>`).join("")}</div><div class="card">${chips()}${menu(c).map((m,i)=>!inCat(m)?"":`<div class="row"><span>${m[0]}<span class="mu"> · ${fa(m[1])} هزار تومان</span></span>${S.stock[c.id+"|"+m[0]]?`<b class="mu">ناموجود</b>`:`<span><button class="btn alt" onclick="add(${i},-1)">−</button> ${fa(S.cart[i]||0)} <button class="btn" onclick="add(${i},1)">+</button></span>`}</div>`).join("")}</div><div class="card" style="margin-top:12px"><b>نحوه دریافت</b><br><label><input type="radio" style="width:auto" name="md" ${S.mode=="in"?"checked":""} onchange="S.mode='in';draw()"> دریافت حضوری</label> &nbsp; <label><input type="radio" style="width:auto" name="md" ${S.mode=="out"?"checked":""} onchange="S.mode='out';draw()"> ارسال با پیک (+۱۵ هزار)</label>${S.mode=="out"?`<input id="ad" placeholder="نشانی کامل">`:`<p class="mu">زمان آماده‌سازی حدود ۱۰ دقیقه؛ سفارش را در کافه تحویل بگیرید.</p>`}<h3>مبلغ کل: ${fa(t+(S.mode=="out"&&t?15:0))} هزار تومان</h3><button class="btn" onclick="pay()">پرداخت آنلاین و ثبت سفارش</button></div>`},
+done:()=>{const c=CAFES.find(x=>x.id==S.cafe);return `<div class="steps">مرحله ۴ از ۴ · پایان</div><h2>سفارش ثبت شد ✔</h2><p class="ok">۱ امتیاز به باشگاه شما اضافه شد. مجموع: ${fa(S.pts)}</p><p>${S.tmpOrder.mode=="out"?"پیک به‌زودی سفارش را می‌رساند 🛵":"سفارش شما در کافه آماده می‌شود ☕"}</p><div class="card"><h3>به ${c.n} امتیاز بدهید</h3>قیمت: <select id="r1">${[5,4,3,2,1].map(x=>`<option>${x}</option>`)}</select> کیفیت سرو: <select id="r2">${[5,4,3,2,1].map(x=>`<option>${x}</option>`)}</select><br><button class="btn" onclick="rate()">ثبت امتیاز</button></div>`},
+club:()=>`<h2>باشگاه مشتریان</h2>${S.u?`<div class="card"><h3>امتیاز شما: ${fa(S.pts)}</h3><div style="background:var(--ln);border-radius:8px;overflow:hidden"><div style="width:${Math.min(100,S.pts*20)}%;background:var(--c3);height:14px"></div></div><p class="mu">با هر سفارش ۱ امتیاز؛ با ۵ امتیاز یک نوشیدنی رایگان.</p><button class="btn" ${S.pts<5?"disabled style='opacity:.5'":""} onclick="S.pts-=5;save();alert('جایزه فعال شد: یک نوشیدنی رایگان 🎁');draw()">دریافت جایزه (۵ امتیاز)</button></div>`:`<p>برای دیدن امتیازها وارد شوید.</p><button class="btn" onclick="go('login')">ورود</button>`}`,
+compare:()=>{const l=CAFES.filter(c=>S.cmp.includes(c.id));return `<h2>مقایسه کافه‌ها</h2>${l.length<2?"<p>حداقل دو کافه را در لیست انتخاب کنید.</p>":`<table><tr><th></th>${l.map(c=>`<th>${c.n}</th>`).join("")}</tr><tr><td>محله</td>${l.map(c=>`<td>${c.a}</td>`).join("")}</tr><tr><td>امتیاز</td>${l.map(c=>`<td>${avg(c)}</td>`).join("")}</tr><tr><td>سطح قیمت</td>${l.map(c=>`<td>${price(c)}</td>`).join("")}</tr><tr><td>میانگین منو</td>${l.map(c=>`<td>${fa(Math.round(c.m.reduce((a,b)=>a+b[1],0)/c.m.length))} هزار</td>`).join("")}</tr></table>`}<br><button class="btn alt" onclick="S.cmp=[];go('areas')">پاک‌کردن و بازگشت</button>`},
+cart:()=>{const c=CAFES.find(x=>x.id==S.cafe),m=c?menu(c):[],it=Object.entries(S.cart).filter(e=>e[1]>0);return `<h2>سبد خرید</h2>${it.length?`<div class="card"><b>${c.n}</b>${it.map(([i,q])=>`<div class="row"><span>${m[i][0]}</span><span><button class="btn alt" onclick="add(${i},-1)">−</button> ${fa(q)} <button class="btn" onclick="add(${i},1)">+</button></span></div>`).join("")}<h3>جمع: ${fa(total(c))} هزار تومان</h3><button class="btn" onclick="go('cafe')">ادامه و پرداخت</button><button class="btn alt" onclick="S.cart={};draw()">خالی‌کردن سبد</button></div>`:`<p>سبد شما خالی است.</p><button class="btn" onclick="go('areas')">انتخاب کافه</button>`}<h2>سفارش‌های قبلی</h2><div class="card">${S.orders.length?S.orders.slice().reverse().map(o=>`<div class="row"><span>${CAFES.find(x=>x.id==o.c).n}</span><b>${fa(o.t)} هزار</b></div>`).join(""):"<p class='mu'>هنوز سفارشی ثبت نشده.</p>"}</div>`},
+blog:()=>`<h2>وبلاگ</h2><div class="grid">${BLOG.map(b=>`<div class="card"><h3>${b[0]}</h3><p>${b[1]}</p></div>`).join("")}</div>`,
+contact:()=>`<h2>تماس با ما</h2><div class="card" style="max-width:480px"><input id="cn" placeholder="نام"><input id="ce" placeholder="شماره تماس"><textarea id="cm" rows="4" placeholder="پیام شما"></textarea><button class="btn" onclick="if($('#cm').value){alert('پیام شما ثبت شد (نمایشی)');go('home')}">ارسال</button><p class="mu">تلفن: ـــــ · ایمیل: ـــــ</p></div>`,
+admin:()=>{if(!S.u||S.u.role!="admin")return "<p>دسترسی مجاز نیست.</p>";const t=[["prod","محصولات"],["staff","کارکنان"],["sms","پنل پیامکی"],["fin","هزینه‌ها و فروش"],["buy","لیست خرید"],["hrs","ساعات کار"]];
+ return `<h2>پنل مدیریت</h2><p class="adm">🏺 ${CAFES[0].n}</p><div class="tabs">${t.map(x=>`<button class="btn ${S.tab==x[0]?"":"alt"}" onclick="S.tab='${x[0]}';draw()">${x[1]}</button>`).join("")}</div>`+A[S.tab]()}};
+const A={
+prod:()=>{const c=CAFES[0],l=[...c.m,...(S.prods.x||[])];return `<div class="card">${l.map((m,i)=>`<div class="row"><span>${m[0]} · ${fa(m[1])} هزار ${S.stock[c.id+"|"+m[0]]?"<b>(ناموجود)</b>":""}</span><span><button class="btn alt" onclick="tg('${m[0]}')">${S.stock[c.id+"|"+m[0]]?"موجود شد":"موجودی نداریم"}</button>${i>=c.m.length?`<button class="btn alt" onclick="S.prods.x.splice(${i-c.m.length},1);save();draw()">حذف</button>`:""}</span></div>`).join("")}<input id="pn" placeholder="نام محصول"><input id="pp" placeholder="قیمت (هزار تومان)" inputmode="numeric"><button class="btn" onclick="addp()">افزودن محصول</button></div>`},
+staff:()=>`<div class="card">${S.staff.map((s,i)=>`<div class="row"><span>${s[0]} · ${s[1]} · ${fa(s[2])} هزار/روز</span><span><button class="btn" onclick="clk(${i})">${on(s[0])?"ثبت خروج":"ثبت ورود"}</button><button class="btn alt" onclick="S.staff.splice(${i},1);save();draw()">حذف</button></div>`).join("")}<h3>زمان حضور امروز</h3>${S.staff.map(s=>`<div class="row"><span>${s[0]}</span><span class="mu">${hh(s[0])}</span></div>`).join("")}<input id="sn" placeholder="نام"><input id="sr" placeholder="سمت"><input id="sp" placeholder="حقوق روزانه (هزار تومان)" inputmode="numeric"><button class="btn" onclick="adds()">افزودن</button></div>`,
+sms:()=>`<div class="card"><textarea id="sm" rows="3" placeholder="متن پیامک تبلیغاتی برای مشتریان باشگاه"></textarea><button class="btn" onclick="if($('#sm').value){S.sms.unshift($('#sm').value);save();draw()}">ارسال (نمایشی)</button>${S.sms.map(x=>`<div class="row mu">✉ ${x}</div>`).join("")}</div>`,
+hrs:()=>`<div class="card"><h3>ساعت کار امروز</h3>از <input type="time" id="ho" value="${S.hrs.o}" style="width:auto"> تا <input type="time" id="hc" value="${S.hrs.c}" style="width:auto"><br><button class="btn" onclick="S.hrs.o=$('#ho').value;S.hrs.c=$('#hc').value;save();draw()">ذخیره ساعت کار</button><h3>وضعیت فعلی: ${S.hrs.open?"باز":"بسته"}</h3><button class="btn ${S.hrs.open?"alt":""}" onclick="S.hrs.open=!S.hrs.open;save();draw()">${S.hrs.open?"بستن کافه":"باز کردن کافه"}</button><p class="mu">این اطلاعات فوراً به مشتریان نشان داده می‌شود و در زمان بسته بودن سفارش ثبت نمی‌شود.</p></div>`,
+buy:()=>{const l=Object.keys(S.stock).filter(k=>S.stock[k]&&k.startsWith("1|"));return `<div class="card"><h3>لیست خرید کافه</h3>${l.length?l.map(k=>`<div class="row"><span>🛒 ${k.slice(2)}</span><button class="btn" onclick="tg('${k.slice(2)}')">خریداری شد</button></div>`).join(""):"<p class='mu'>همه‌چیز موجود است.</p>"}</div>`},
+fin:()=>{const rev=S.orders.reduce((a,o)=>a+o.t,0),cost=Math.round(rev*.4),sal=S.staff.reduce((a,s)=>a+s[2],0),pr=rev-cost-sal;return `<div class="grid"><div class="card"><h3>ورودی فروش</h3>${fa(rev)} هزار</div><div class="card"><h3>هزینه مواد (۴۰٪)</h3>${fa(cost)} هزار</div><div class="card"><h3>حقوق روزانه</h3>${fa(sal)} هزار</div><div class="card"><h3>سود خالص</h3><b style="color:${pr<0?"#c00":"#2d6a3f"}">${fa(pr)} هزار</b></div></div><div class="card" style="margin-top:12px"><h3>نمودار فروش هفته (هزار تومان)</h3>${chart()}<p class="mu">روزهای قبل نمونه‌اند؛ فروش امروز از سفارش‌های واقعی محاسبه می‌شود.</p></div><p class="mu">${fa(S.orders.length)} سفارش ثبت شده. درصد هزینه مواد قابل تنظیم است.</p>`}};
+function menu(c){return c.id==1?[...c.m,...(S.prods.x||[])]:c.m}
+const CATS=[["tea","چای","🍵",/چای|دمنوش/,"var(--c2)"],["cake","کیک","🍰",/کیک|شیرینی|حلوا|کروسان/,"var(--c3)"],["coffee","قهوه","☕",/قهوه|لاته|اسپرسو|کاپوچینو|موکا|کافی/,"var(--c1)"]];
+function inCat(m){return !S.cat||CATS.find(c=>c[0]==S.cat)[3].test(m[0])}
+function chips(){return `<div class="tabs"><button class="btn ${S.cat?"alt":""}" onclick="S.cat=null;draw()">همه</button>${CATS.map(c=>`<button class="btn ${S.cat==c[0]?"":"alt"}" onclick="S.cat='${c[0]}';draw()">${c[2]} ${c[1]}</button>`).join("")}</div>`}
+function cn(){return Object.values(S.cart).reduce((a,b)=>a+b,0)}
+function tag(c){if(c.id!=1)return"";const h=S.hrs;return `<div class="tag ${h.open?"":"off"}">● ${h.open?"الان باز است":"الان بسته است"} · امروز ${h.o} تا ${h.c}</div>`}
+function on(n){const a=S.att[n]||[];return a.length&&!a[a.length-1][1]}
+function clk(i){const n=S.staff[i][0],a=S.att[n]=S.att[n]||[];on(n)?a[a.length-1][1]=Date.now():a.push([Date.now(),0]);save();draw()}
+function hh(n){const a=(S.att[n]||[]).filter(s=>new Date(s[0]).toDateString()==new Date().toDateString()),t=x=>new Date(x).toLocaleTimeString("fa-IR",{hour:"2-digit",minute:"2-digit"}),h=a.reduce((z,s)=>z+((s[1]||Date.now())-s[0]),0)/36e5;return a.length?a.map(s=>t(s[0])+"–"+(s[1]?t(s[1]):"حاضر")).join("، ")+" · "+fa(h.toFixed(1))+" ساعت":"ثبت نشده"}
+function chart(){const d=[];for(let i=6;i>=0;i--){const x=new Date();x.setDate(x.getDate()-i);d.push(x)}const base=[420,380,510,460,600,720,0],iso=x=>x.toISOString().slice(0,10),v=d.map((x,i)=>base[i]+S.orders.filter(o=>o.c==1&&(o.d||iso(new Date()))==iso(x)).reduce((a,o)=>a+o.t,0)),mx=Math.max(...v,1);return `<svg viewBox="0 0 350 180" style="width:100%;max-width:520px">${v.map((n,i)=>{const h=n/mx*120;return `<rect x="${i*50+10}" y="${140-h}" width="30" height="${h}" fill="#D53E0F" rx="3"/><text x="${i*50+25}" y="${134-h}" font-size="10" text-anchor="middle" fill="#3a0a05">${fa(n)}</text><text x="${i*50+25}" y="158" font-size="10" text-anchor="middle" fill="#7a4a3a">${d[i].toLocaleDateString("fa-IR",{weekday:"short"})}</text>`}).join("")}</svg>`}
+let T="classic";try{T=localStorage.getItem("cafechi_t")||"classic"}catch(e){}
+document.documentElement.dataset.t=T;
+function thm(){T=T=="modern"?"classic":"modern";document.documentElement.dataset.t=T;try{localStorage.setItem("cafechi_t",T)}catch(e){}draw()}
+(function(){const rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+window.alert=m=>{const t=document.createElement("div");t.className="toast";t.textContent=m;document.body.appendChild(t);setTimeout(()=>t.remove(),2800)};
+const p=document.createElement("div");p.id="prog";document.body.appendChild(p);
+addEventListener("scroll",()=>{const h=document.documentElement;p.style.setProperty("--sp",h.scrollTop/((h.scrollHeight-h.clientHeight)||1));document.querySelector("header").classList.toggle("sc",h.scrollTop>20)},{passive:true});
+addEventListener("pointermove",e=>{const t=e.target.closest&&e.target.closest(".card,.cat,.pick,.hero");if(!t)return;const r=t.getBoundingClientRect();t.style.setProperty("--px",e.clientX-r.left+"px");t.style.setProperty("--py",e.clientY-r.top+"px");if(t.classList.contains("hero")){t.style.setProperty("--mx",(e.clientX-r.left)/r.width-.5);t.style.setProperty("--my",(e.clientY-r.top)/r.height-.5)}});
+addEventListener("click",e=>{const b=e.target.closest&&e.target.closest(".btn");if(!b||rm)return;const r=b.getBoundingClientRect(),s=document.createElement("span"),d=Math.max(r.width,r.height)*2;s.className="rip";s.style.cssText=`width:${d}px;height:${d}px;left:${e.clientX-r.left-d/2}px;top:${e.clientY-r.top-d/2}px`;b.appendChild(s);setTimeout(()=>s.remove(),600)})})();
+function fly(e,ch){if(matchMedia("(prefers-reduced-motion:reduce)").matches||!e||!e.target.getBoundingClientRect)return;const c=document.querySelector(".cartbtn");if(!c)return;const a=e.target.getBoundingClientRect(),b=c.getBoundingClientRect(),s=document.createElement("div");s.textContent=ch;s.style.cssText=`position:fixed;z-index:50;font-size:1.4rem;pointer-events:none;left:${a.left}px;top:${a.top}px`;document.body.appendChild(s);s.animate([{transform:"translate(0,0) scale(1)",opacity:1},{transform:`translate(${b.left-a.left}px,${b.top-a.top}px) scale(.3)`,opacity:.3}],{duration:750,easing:"cubic-bezier(.5,-.3,.9,.5)"}).onfinish=()=>s.remove()}
+function confetti(){if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;const k=["#5E0006","#9B0F06","#D53E0F","#EED9B9"];for(let i=0;i<70;i++){const s=document.createElement("i");s.style.cssText=`position:fixed;z-index:60;left:${innerWidth/2}px;top:${innerHeight/3}px;width:8px;height:12px;background:${k[i%4]};pointer-events:none`;document.body.appendChild(s);s.animate([{transform:"translate(0,0) rotate(0)",opacity:1},{transform:`translate(${(Math.random()-.5)*innerWidth*.9}px,${innerHeight*.5+Math.random()*innerHeight*.4}px) rotate(${Math.random()*720}deg)`,opacity:0}],{duration:1400+Math.random()*900,easing:"cubic-bezier(.2,.7,.4,1)"}).onfinish=()=>s.remove()}}
+function tg(n){const k="1|"+n;S.stock[k]=!S.stock[k];save();draw()}
+addEventListener("storage",()=>{try{const x=JSON.parse(localStorage.getItem("cafechi"));S.stock=x.stock||{};S.hrs=x.hrs||S.hrs;draw()}catch(e){}});
+function total(c){return Object.entries(S.cart).reduce((a,[i,q])=>a+menu(c)[i][1]*q,0)}
+function add(i,d){if(d>0)fly(window.event,"☕");S.cart[i]=Math.max(0,(S.cart[i]||0)+d);draw()}
+function cmp(id){const i=S.cmp.indexOf(id);i<0?(S.cmp.length<3&&S.cmp.push(id)):S.cmp.splice(i,1);draw()}
+function pay(){const c=CAFES.find(x=>x.id==S.cafe),t=total(c);if(!t)return alert("سبد خالی است");if(c.id==1&&!S.hrs.open)return alert("کافه الان بسته است");if(S.mode=="out"&&!$("#ad").value)return alert("نشانی را بنویسید");
+ if(!confirm("درگاه پرداخت نمایشی: پرداخت "+fa(t)+" هزار تومان؟"))return;S.pts++;S.orders.push({c:c.id,d:new Date().toISOString().slice(0,10),t:t+(S.mode=="out"?15:0)});S.tmpOrder={mode:S.mode};save();go("done");confetti()}
+function rate(){const id=S.cafe;(S.rate[id]=S.rate[id]||[]).push([+$("#r1").value,+$("#r2").value]);save();alert("سپاس از امتیاز شما");go("areas")}
+function login(){const p=$("#ph").value.trim();if(!/^09\d{9}$/.test(p)){$("#er").textContent="شماره معتبر نیست";return}
+ if($("#cw").style.display=="none"){$("#cw").style.display="block";$("#lb").textContent="ورود";$("#er").textContent="کد ۱۲۳۴ را وارد کنید";return}
+ if($("#cd").value!="1234"){$("#er").textContent="کد اشتباه است";return}
+ S.u={phone:p,role:p=="09120000000"?"admin":"customer"};save();go(S.u.role=="admin"?"admin":"areas")}
+function addp(){const n=$("#pn").value,p=+$("#pp").value;if(n&&p){(S.prods.x=S.prods.x||[]).push([n,p]);save();draw()}}
+function adds(){const n=$("#sn").value,r=$("#sr").value,p=+$("#sp").value;if(n&&p){S.staff.push([n,r,p]);save();draw()}}
+function draw(){nav();const a=$("#app"),k=S.v+(S.v=="admin"?S.tab:""),b=document.querySelector(".cartbtn b");if(b&&cn()!=draw.c)b.classList.add("bump");draw.c=cn();a.dataset.v=S.v;a.className=k!=draw.k?"enter":"";draw.k=k;a.innerHTML=V[S.v]()}
+draw();
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+# نام اپ را با نامی که در Fly گرفتی عوض کن
+app = "cafechi-api"
+primary_region = "fra"
+
+[build]
+
+[env]
+  PORT = "3000"
+  # عمداً production نیست: در production، SMS_MODE=console و mock-pay مجاز نیستند.
+  # فقط برای دموی آزمایشی؛ قبل از انتشار واقعی حتماً production + پیامک و درگاه واقعی.
+  NODE_ENV = "demo"
+  SMS_MODE = "console"
+  TRUST_PROXY = "1"
+  CORS_ORIGIN = "https://joesunchez.free.je,http://joesunchez.free.je"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+  [[http_service.checks]]
+    method = "GET"
+    path = "/health"
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "10s"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
